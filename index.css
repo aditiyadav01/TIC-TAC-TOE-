@@ -1,0 +1,33 @@
+html {
+    margin: 0;
+  }
+  
+  .canvas {
+    margin: 100px auto;
+    width: 80%;
+    text-align: center;
+  }
+  
+  .board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+  }
+  
+  .cell {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    border: 2px solid black;
+    font-size: 2em;
+    font-family: Arial, sans-serif;
+    cursor: pointer;
+  }
+  
+  .cell.taken {
+    cursor: not-allowed;
+  }
